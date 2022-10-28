@@ -1,0 +1,157 @@
+body {
+    /*background-color: rgb(87, 108, 126);*/
+    background-image: url("seguridad4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container_inicio {
+    display: grid;
+    grid-template: auto auto auto / auto 1fr;
+    grid-template-areas: "header header" 
+                         "contenido imagen"
+                         "footer footer";
+    /*background-color: blue;
+    padding: 10px;*/
+}
+
+.container_otro {
+    display: grid;
+    grid-template: auto auto auto / auto;
+    grid-template-areas: "header" 
+                         "contenido"
+                         "footer";
+    /*background-color: blue;
+    padding: 10px;*/
+}
+
+.header {
+    grid-area: header;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.boton{
+    position: relative;
+    left: 450px;
+    bottom: 30px;
+}
+/*
+.boton_nosotros{
+    position: relative;
+    left: 450px;
+    bottom: 30px;
+}
+
+.boton_servicios{
+    position: relative;
+    left: 450px;
+    bottom: 30px;
+}
+
+.boton_contacto{
+    position: relative;
+    left: 450px;
+    bottom: 30px;
+}
+
+.boton_rrhh{
+    position: relative;
+    left: 450px;
+    bottom: 30px;
+}
+*/
+a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 7%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: aliceblue;
+}
+
+.boton:link,
+.boton:visited,
+
+.boton:hover {
+    background: rgb(201, 58, 50);
+}
+
+.boton:active {
+    background: red;
+    color: white;
+}
+
+.imagen-circular {
+    border-radius: 50%;
+    border: 50px;
+  }
+
+.linea2 {
+    position: relative;
+    top: 50px;
+}
+
+.pie-pagina {
+    position: relative;
+    left: 0px;
+    top: 50px;
+}
+
+.facebook {
+    position: relative;
+    left: 1100px;
+    bottom: 35px;
+}
+
+
+.formulario {
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_consulta {
+    position: relative;
+    bottom: 140px;
+}
+
+.boton_enviar {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 15%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+    color: aliceblue;
+    position: relative;
+    bottom: 0px;  
+}
+
+.boton_enviar:link,
+.boton_enviar:visited,
+
+.boton_enviar:hover {
+    background: rgb(201, 58, 50);
+}
+
+.boton_enviar:active {
+    background: red;
+    color: white;
+}
